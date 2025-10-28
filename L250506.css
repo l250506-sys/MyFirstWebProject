@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(220, 220, 237);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(249, 85, 249);
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+header h1{
+    font-family: "Poppins";
+    font-weight: 600;
+    color: rgb(72, 58, 58);
+}
+header::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(150, 149, 150);
+    width: 100vw;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.pic-name{
+    padding: 20px;
+    gap:10px;
+}
+.pic-name img{
+    width: 150px;
+    border-radius: 50%;
+}
+.pic-name h2{
+    font-family: "Roboto";
+}
+.pic-name h2 span{
+    color: #4c57af;
+}
+.tbl{
+    gap:10px;
+    font-family: "Inter";
+}
+.tbl table{
+    width: 70%;
+    border-collapse: collapse;
+    border: solid 2px black;
+}
+.tbl td, .tbl th{
+    text-align: center;
+    font-size: 1.2em;
+    padding: 16px;
+    border: solid 2px black;
+    width:33%;
+    max-width: 33%;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+td {
+    color: #333;
+    font-weight: 600;
+    background-color: rgb(154, 154, 195);
+}
+.hobbies-projects{
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.hobbies{
+    font-family: "Inter";
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.hobbies h3{
+    font-size: 1.4em;
+}
+.hobbies ol{
+    padding: 5px 50px;
+}
